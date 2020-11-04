@@ -1,4 +1,3 @@
-g++ -o problema problema.cpp
-echo "problema"
-./problema < problema_in.txt
-rm problema
+g++ -o $1 $1.cpp
+./$1 < $1_in.txt
+rm $1
