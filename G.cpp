@@ -13,8 +13,23 @@ using namespace std;
 
 int main(){
     ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
-
+    cin.tie(NULL);
     
+    list<int> valores;
+    int caixas,valor;
+    cin >> caixas;
+    int inicial=100;
+    valores.push_back(inicial);
+    for(int i=0;i<caixas;i++){
+
+        cin >> valor;
+        inicial+=valor;
+        valores.emplace_back(inicial);
+    }
+    
+    valores.sort();
+
+    cout << valores.back() << endl;
+
 
 }

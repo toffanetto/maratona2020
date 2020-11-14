@@ -11,10 +11,26 @@
 
 using namespace std;
 
+
+
+
 int main(){
     ios_base::sync_with_stdio(false);
         cin.tie(NULL);
 
+    int p,f;
+    cin >> p >> f;
+    int m[p][f];
+    bool flag = true;
+    for(int i=0;i<f;i++){
+        int a,b;
+        cin >> a >> b;
+        m[a][b]=1;
+    }
     
+    if(flag)
+        cout << "Y" << endl;
+        else 
+        cout << "N" << endl;
 
 }
